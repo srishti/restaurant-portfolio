@@ -1,0 +1,12 @@
+{
+	"name": "restaurant-portfolio-website",
+	"version": "1.0.0",
+	"description": "Portfolio Website Template for Restaurant",
+	"main": "index.js",
+	"scripts": {
+		"watch": "node-sass -o css scss -w"
+	},
+	"keywords": [ "restaurant portfolio website", "restaurant", "portfolio", "portfolio website" ],
+	"author": "Srishti Gupta",
+	"license": "ISC"
+}
