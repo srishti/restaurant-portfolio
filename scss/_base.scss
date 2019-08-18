@@ -7,6 +7,7 @@ $color-primary: #d3ab55;
 $color-secondary: #bbb;
 
 // variables for fonts
+$font-dancingScript: "Dancing Script", cursive;
 $font-josefinSans: "Josefin Sans", sans-serif;
 $font-nunito: "Nunito", sans-serif;
 
@@ -23,6 +24,20 @@ $font-nunito: "Nunito", sans-serif;
 	font-weight: 300;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+@mixin centering($top) {
+	position: absolute;
+	top: $top;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin headingStyles($fontFamily, $fontSize, $color, $marginBottom) {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $color;
+	margin-bottom: $marginBottom;
 }
 
 * {

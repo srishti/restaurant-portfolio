@@ -22,3 +22,13 @@
 	text-align: center;
 	@include textStyles($font-josefinSans, 18px);
 }
+
+.main-heading {
+	font-weight: 300;
+	@include headingStyles($font-dancingScript, 100px, $color-primary, 40px);
+}
+
+.sub-heading {
+	font-weight: 300;
+	@include headingStyles($font-josefinSans, 60px, $color-secondary, 80px);
+}
