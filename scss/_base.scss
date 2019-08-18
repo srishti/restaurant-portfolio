@@ -4,12 +4,25 @@
 $color-dark: #262626;
 $color-black: #000;
 $color-primary: #d3ab55;
+$color-secondary: #bbb;
+
+// variables for fonts
+$font-josefinSans: "Josefin Sans", sans-serif;
+$font-nunito: "Nunito", sans-serif;
 
 // mixins
 @mixin flexLayout {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@mixin textStyles($fontFamily, $fontSize) {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 * {

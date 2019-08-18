@@ -32,7 +32,27 @@ body {
 	height: 110px;
 	border: 3px solid #d3ab55;
 	border-radius: 50%;
+	margin-right: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.main-name {
+	color: #bbb;
+	font-family: "Nunito", sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.sub-name {
+	color: #bbb;
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
