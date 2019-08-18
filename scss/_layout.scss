@@ -18,3 +18,24 @@
 		@include centering(50%);
 	}
 }
+
+.about-us {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+
+	&-left {
+		width: 40%;
+		position: relative;
+		left: -200px;
+
+		img {
+			width: 100%;
+			opacity: .7;
+		}
+	}
+
+	&-right {
+		width: 60%;
+	}
+}

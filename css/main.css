@@ -30,6 +30,24 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+.about-us {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+.about-us-left {
+	width: 40%;
+	position: relative;
+	left: -200px;
+}
+.about-us-left img {
+	width: 100%;
+	opacity: .7;
+}
+.about-us-right {
+	width: 60%;
+}
+
 .logo {
 	font-size: 70px;
 	color: #d3ab55;
