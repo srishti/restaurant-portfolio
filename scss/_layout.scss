@@ -73,3 +73,38 @@
 		flex-wrap: wrap;
 	}
 }
+
+.footer {
+	padding: 70px 0;
+	@include flexLayout;
+	flex-direction: column;
+
+	&-header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 70px;
+	}
+
+	.social-media {
+		display: flex;
+		width: 300px;
+		justify-content: space-between;
+		margin-bottom: 40px;
+
+		&-item {
+			list-style: none;
+			font-size: 50px;
+			color: $color-secondary;
+			transition: color .7s;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	&-copyright-paragraph {
+		@include textStyles($font-josefinSans, 18px, 500, 0, capitalize);
+		color: $color-secondary;
+	}
+}

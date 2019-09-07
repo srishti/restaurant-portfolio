@@ -82,6 +82,42 @@ body {
 	flex-wrap: wrap;
 }
 
+.footer {
+	padding: 70px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.footer-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 70px;
+}
+.footer .social-media {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.footer .social-media-item {
+	list-style: none;
+	font-size: 50px;
+	color: #bbb;
+	transition: color .7s;
+}
+.footer .social-media-item:hover {
+	color: #d3ab55;
+}
+.footer-copyright-paragraph {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	color: #bbb;
+}
+
 .logo {
 	font-size: 70px;
 	color: #d3ab55;
