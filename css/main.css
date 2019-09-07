@@ -154,6 +154,7 @@ body {
 	width: 33.3333%;
 	height: 30vw;
 	position: relative;
+	overflow: hidden;
 }
 .card-img {
 	object-fit: cover;
@@ -162,7 +163,7 @@ body {
 .card-overlay {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -100%;
 	background-color: rgba(211, 171, 85, 0.6);
 	color: #fff;
 	z-index: 1;
@@ -170,6 +171,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	transition: left .7s;
 }
 .card-overlay-heading {
 	font-family: "Nunito", sans-serif;
@@ -200,4 +202,7 @@ body {
 	border-radius: 30px;
 	outline: none;
 	cursor: pointer;
+}
+.card:hover .card-overlay {
+	left: 0;
 }

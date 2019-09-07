@@ -57,6 +57,7 @@
 	width: 33.3333%;
 	height: 30vw;
 	position: relative;
+	overflow: hidden;
 
 	&-img {
 		object-fit: cover;
@@ -67,13 +68,14 @@
 	&-overlay {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -100%;
 		background-color: rgba($color-primary, .6);
 		color: $color-white;
 		z-index: 1;
 		@include flexLayout;
 		flex-direction: column;
 		@extend %fullSpace;
+		transition: left .7s;
 
 		&-heading {
 			@include textStyles($font-nunito, 50px, 300, 2px, capitalize);
@@ -95,5 +97,9 @@
 			outline: none;
 			cursor: pointer;
 		}
+	}
+
+	&:hover .card-overlay {
+		left: 0;
 	}
 }
