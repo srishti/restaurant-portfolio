@@ -171,3 +171,33 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
+.card-overlay-heading {
+	font-family: "Nunito", sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+.card-overlay-paragraph {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.card-overlay-btn {
+	width: 150px;
+	height: 40px;
+	color: #d3ab55;
+	background-color: #fff;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: 1px solid #d3ab55;
+	border-radius: 30px;
+	outline: none;
+	cursor: pointer;
+}

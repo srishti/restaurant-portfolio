@@ -19,12 +19,12 @@ $font-nunito: "Nunito", sans-serif;
 	align-items: center;
 }
 
-@mixin textStyles($fontFamily, $fontSize) {
+@mixin textStyles($fontFamily, $fontSize, $fontWeight, $letterSpacing, $textTransform) {
 	font-family: $fontFamily;
 	font-size: $fontSize;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	font-weight: $fontWeight;
+	letter-spacing: $letterSpacing;
+	text-transform: $textTransform;
 }
 
 @mixin centering($top) {

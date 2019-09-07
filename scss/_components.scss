@@ -14,13 +14,13 @@
 
 .main-name {
 	color: $color-secondary;
-	@include textStyles($font-nunito, 50px);
+	@include textStyles($font-nunito, 50px, 300, 2px, uppercase);
 }
 
 .sub-name {
 	color: $color-secondary;
 	text-align: center;
-	@include textStyles($font-josefinSans, 18px);
+	@include textStyles($font-josefinSans, 18px, 300, 2px, uppercase);
 }
 
 .main-heading {
@@ -74,5 +74,26 @@
 		@include flexLayout;
 		flex-direction: column;
 		@extend %fullSpace;
+
+		&-heading {
+			@include textStyles($font-nunito, 50px, 300, 2px, capitalize);
+		}
+
+		&-paragraph {
+			@include textStyles($font-josefinSans, 30px, 300, 2px, capitalize);
+			margin-bottom: 30px;
+		}
+
+		&-btn {
+			width: 150px;
+			height: 40px;
+			color: $color-primary;
+			background-color: $color-white;
+			@include textStyles($font-josefinSans, 14px, bold, 1px, uppercase);
+			border: 1px solid $color-primary;
+			border-radius: 30px;
+			outline: none;
+			cursor: pointer;
+		}
 	}
 }
