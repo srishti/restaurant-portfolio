@@ -44,6 +44,28 @@
 			background-color: #1f1d1d;
 			position: fixed;
 			right: 0;
+			@include flexLayout;
+
+			.nav-list {
+				&-item {
+					list-style: none;
+				}
+
+				&-link {
+					@include textStyles($font-dancingScript, 50px, 500, 0, capitalize);
+					color: $color-secondary;
+					text-decoration: none;
+					display: block;
+					margin: 20px;
+					text-align: center;
+					transition: all .5s;
+
+					&:hover {
+						color: $color-primary;
+						letter-spacing: 4px;
+					}
+				}
+			}
 		}
 	}
 }

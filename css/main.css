@@ -52,6 +52,29 @@ body {
 	background-color: #1f1d1d;
 	position: fixed;
 	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar-navigation-right .nav-list-item {
+	list-style: none;
+}
+.navbar-navigation-right .nav-list-link {
+	font-family: "Dancing Script", cursive;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	color: #bbb;
+	text-decoration: none;
+	display: block;
+	margin: 20px;
+	text-align: center;
+	transition: all .5s;
+}
+.navbar-navigation-right .nav-list-link:hover {
+	color: #d3ab55;
+	letter-spacing: 4px;
 }
 
 .header {
