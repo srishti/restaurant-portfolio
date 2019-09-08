@@ -303,21 +303,23 @@ body {
 }
 .footer .social-media-item {
 	list-style: none;
+}
+.footer .social-media-link {
 	font-size: 50px;
 	color: #bbb;
 	transition: color .7s;
 	text-decoration: none;
 }
-.footer .social-media-item:hover {
+.footer .social-media-link:hover {
 	color: #d3ab55;
 }
 @media (max-width: 1000px) {
-	.footer .social-media-item {
+	.footer .social-media-link {
 		font-size: 35px;
 	}
 }
 @media (max-width: 500px) {
-	.footer .social-media-item {
+	.footer .social-media-link {
 		font-size: 25px;
 	}
 }

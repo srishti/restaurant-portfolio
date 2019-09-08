@@ -275,6 +275,9 @@
 
 		&-item {
 			list-style: none;
+		}
+
+		&-link {
 			font-size: 50px;
 			color: $color-secondary;
 			transition: color .7s;
