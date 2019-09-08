@@ -1,5 +1,27 @@
 // file for styles for reusable components
 
+.hamburger-menu {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 10%;
+	right: 5%;
+
+	.menu {
+		@extend %fullSpace;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		cursor: pointer;
+
+		&-line {
+			width: 100%;
+			height: 4px;
+			background-color: $color-primary;
+		}
+	}
+}
+
 .logo {
 	font-size: 70px;
 	color: $color-primary;
